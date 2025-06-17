@@ -1,0 +1,94 @@
+ {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      scroll-behavior: smooth;
+    }
+
+    /* Navigation styles */
+    nav {
+      background-color: #333;
+      padding: 1em;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1em;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1em;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 1.5em;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Section styles */
+    section {
+      padding: 60px 20px;
+      min-height: 100vh;
+    }
+
+    #home { background-color: #f4f4f4; }
+    #skills { background-color: #e0f7fa; }
+    #about { background-color: #fce4ec; }
+    #contact { background-color: #ede7f6; }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .contact-info i {
+      margin-right: 10px;
+    }
+
+    .contact-info a {
+      text-decoration: none;
+      color: inherit;
+      font-size: 1.1em;
+    }
+
+    .contact-info p {
+      margin: 0.5em 0;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1em;
+      }
+
+      .nav-links a {
+        padding: 0.5em 0;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .hamburger {
+        display: block;
+      }
+    }
